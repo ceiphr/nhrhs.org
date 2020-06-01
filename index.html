@@ -85,13 +85,17 @@
           background-position: 0% 50%;
         }
       }
+
+      #heroImg {
+        max-height: 112px;
+      }
     </style>
   </head>
   <body>
     <section class="hero is-fullheight">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <img src="kekw.gif" />
+          <img id="heroImg" src="kekw.gif" />
           <h1 class="title">
             Ari is <span id="heroWord">super cool</span>. Wow.
           </h1>
@@ -142,9 +146,16 @@
       ];
 
       // RNG for picking the phrase
-      function getRandom(arr) {
+      function getRandomFromArr(arr) {
         var rand = Math.random();
         return arr[Math.floor(rand * arr.length)];
+      }
+
+      // RNG for picking between kekw and occhino
+      function occhinoTime() {
+        var rand = Math.random()*10;
+        if(!Math.floor(rand)) return true;
+        return false;
       }
 
       // Issue this code when the page loads
@@ -154,9 +165,11 @@
           heroKeyword = document.querySelector("#heroWord");
 
         startTimer(duration, timeText);
-        heroKeyword.textContent = getRandom(phrases);
+        heroKeyword.textContent = getRandomFromArr(phrases);
+        
+        if(occhinoTime()) document.getElementById("heroImg").src = "oc.jpeg"; 
 
-        // Print easteregg to console
+        // Print stuff to console
         console.log("%cHey. What are you doing in here? ~Ari", "color: red; font-size: x-large");      };
     </script>
   </body>
