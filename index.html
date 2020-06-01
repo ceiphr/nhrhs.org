@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Redirecting to Northern Highlands</title>
+    <link rel="shortcut icon" href="kekw.png" type="image/vnd.microsoft.icon">
     <meta
       http-equiv="refresh"
-      content="10; url=https://www.northernhighlands.org/?ref=ari_is_super_cool"
+      content="3; url=https://www.northernhighlands.org/?ref=ari_is_super_cool"
     />
     <link
       rel="stylesheet"
@@ -27,30 +28,87 @@
 
       gtag("config", "UA-158198449-3");
     </script>
+    <style>
+      .title {
+        background: linear-gradient(
+          270deg,
+          #ff0000,
+          #ffa300,
+          #ebff00,
+          #00ff0c,
+          #00fffb,
+          #000cff,
+          #ff00fd
+        );
+        background-size: 1400% 1400%;
+
+        -webkit-animation: cowboy 10s ease infinite;
+        -moz-animation: cowboy 10s ease infinite;
+        animation: cowboy 10s ease infinite;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      @-webkit-keyframes cowboy {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      @-moz-keyframes cowboy {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      @keyframes cowboy {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
   </head>
   <body>
-    <section class="hero is-danger is-fullheight">
+    <section class="hero is-fullheight">
       <div class="hero-body">
         <div class="container has-text-centered">
+          <img src="kekw.gif" />
           <h1 class="title">
-            👋 Hey. Northern Highlands doesn't own this domain.
+            Ari is super cool. Wow.
           </h1>
           <h2 class="subtitle">
             Redirecting you to www.northernhighlands.org in
-            <span id="time">10</span> seconds.
+            <span id="time">3</span> seconds.
           </h2>
         </div>
       </div>
       <div class="hero-foot">
         <div style="padding: 1em;" class="container has-text-centered">
-          This domain has been owned by
+          nhrhs.org has been owned by
           <a
             class="has-text-black-bis"
             href="mailto:ari+northernhighlands@ceiphr.com"
             target="_blank"
             >Ari Birnbaum</a
           >
-          since October 31, 2016. Northern Highlands, please contact me.
+          since October 31, 2016.
         </div>
       </div>
     </section>
@@ -68,7 +126,7 @@
       }
 
       window.onload = function () {
-        var fiveSeconds = 9,
+        var fiveSeconds = 2,
           display = document.querySelector("#time");
         startTimer(fiveSeconds, display);
       };
