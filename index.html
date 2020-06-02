@@ -6,28 +6,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Redirecting to Northern Highlands</title>
     <link rel="shortcut icon" href="kekw.png" type="image/vnd.microsoft.icon" />
-    <meta
+    <!-- <meta
       http-equiv="refresh"
       content="3; url=https://www.northernhighlands.org/?ref=ari_is_super_cool"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css"
     />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-158198449-3"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-158198449-3");
-    </script>
     <style>
       /* Random title animation */
       .title {
@@ -127,7 +113,7 @@
           display.textContent = timer;
 
           if (--timer < 0) {
-            timer = duration;
+            timer = 0;
           }
         }, 1000);
       }
